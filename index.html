@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Clips Barber Shop - Precision Cuts in Avenel, NJ</title>
@@ -120,12 +123,15 @@
                 <span class="text-2xl font-bold text-creamWhite">Master<span class="text-creamWhite">Clips</span></span>
             </div>
             
-            <div class="hidden md:flex space-x-8">
+            <div class="hidden md:flex items-center space-x-8">
                 <a href="#home" class="hover:text-creamWhite transition">Home</a>
                 <a href="#services" class="hover:text-creamWhite transition">Services</a>
                 <a href="#barbers" class="hover:text-creamWhite transition">Our Barbers</a>
                 <a href="#gallery" class="hover:text-creamWhite transition">Gallery</a>
                 <a href="#contact" class="hover:text-creamWhite transition">Contact</a>
+                <a href="tel:7326342288" class="ml-6 bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-2 px-4 rounded transition flex items-center">
+                    <i class="fas fa-phone mr-2"></i> Call Us
+                </a>
             </div>
             
             <button class="md:hidden focus:outline-none" id="menu-toggle">
@@ -141,6 +147,9 @@
                 <a href="#barbers" class="hover:text-creamWhite transition">Our Barbers</a>
                 <a href="#gallery" class="hover:text-creamWhite transition">Gallery</a>
                 <a href="#contact" class="hover:text-creamWhite transition">Contact</a>
+                <a href="tel:7326342288" class="hidden md:inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-2 px-4 rounded transition">
+                    <i class="fas fa-phone mr-2"></i> Call Us
+                </a>
             </div>
         </div>
     </nav>
@@ -360,59 +369,150 @@
     <section class="py-20 bg-patriotBlue text-creamWhite" id="barbers">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">MEET OUR AMERICAN BARBERS</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">MEET OUR BARBERS</h2>
                 <div class="w-20 h-1 bg-creamWhite mx-auto"></div>
             </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Barber 1 -->
+                    <div class="swiper-slide">
+                        <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
+                            </div>
+                            <div class="p-6 text-gray-800">
+                                <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
+                                <p class="text-patriotRed mb-4">Master Barber / Owner</p>
+                                <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Barber 1 -->
-                <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
-                    </div>
-                    <div class="p-6 text-gray-800">
-                        <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
-                        <p class="text-patriotRed mb-4">Master Barber / Owner</p>
-                        <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                    <!-- Repeat this swiper-slide for other 9 barbers -->
+                    <div class="swiper-slide">
+                        <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
+                            </div>
+                            <div class="p-6 text-gray-800">
+                                <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
+                                <p class="text-patriotRed mb-4">Master Barber / Owner</p>
+                                <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide">
+                        <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
+                            </div>
+                            <div class="p-6 text-gray-800">
+                                <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
+                                <p class="text-patriotRed mb-4">Master Barber / Owner</p>
+                                <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide">
+                        <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
+                            </div>
+                            <div class="p-6 text-gray-800">
+                                <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
+                                <p class="text-patriotRed mb-4">Master Barber / Owner</p>
+                                <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide">
+                        <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
+                            </div>
+                            <div class="p-6 text-gray-800">
+                                <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
+                                <p class="text-patriotRed mb-4">Master Barber / Owner</p>
+                                <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide">
+                        <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
+                            </div>
+                            <div class="p-6 text-gray-800">
+                                <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
+                                <p class="text-patriotRed mb-4">Master Barber / Owner</p>
+                                <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide">
+                        <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
+                            </div>
+                            <div class="p-6 text-gray-800">
+                                <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
+                                <p class="text-patriotRed mb-4">Master Barber / Owner</p>
+                                <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide">
+                        <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1583864697781-a88072735e90?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
+                            </div>
+                            <div class="p-6 text-gray-800">
+                                <h3 class="text-xl font-bold mb-1">Tony Rodriguez</h3>
+                                <p class="text-patriotRed mb-4">Master Barber / Owner</p>
+                                <p class="text-gray-600 mb-4">With over 20 years of experience, Tony specializes in classic and modern haircuts.</p>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Barber 2 -->
-                <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
-                    </div>
-                    <div class="p-6 text-gray-800">
-                        <h3 class="text-xl font-bold mb-1">Mike Johnson</h3>
-                        <p class="text-patriotRed mb-4">Beard Specialist</p>
-                        <p class="text-gray-600 mb-4">Mike is our go-to expert for all beard-related services and straight razor shaves.</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Barber 3 -->
-                <div class="barber-card bg-creamWhite rounded-lg overflow-hidden transition duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3" alt="Barber" class="w-full h-full object-cover transition duration-500">
-                    </div>
-                    <div class="p-6 text-gray-800">
-                        <h3 class="text-xl font-bold mb-1">Carlos Martinez</h3>
-                        <p class="text-patriotRed mb-4">Style Consultant</p>
-                        <p class="text-gray-600 mb-4">Carlos helps clients find their perfect look with personalized style consultations.</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-patriotRed"><i class="fab fa-facebook"></i></a>
-                        </div>
-                    </div>
+            
                 </div>
             </div>
+            
+            <!-- See All Button -->
+            <div class="text-center mt-8">
+                <a href="barbers.html" class="inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-3 px-6 rounded-full transition">
+                    See All Barbers
+                </a>
+            </div>
+            
+            
+            
         </div>
     </section>
 
@@ -420,7 +520,7 @@
     <section class="py-20 bg-creamWhite" id="gallery">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">AMERICAN STYLES</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">GAllLERY OF OUR WORK</h2>
                 <div class="w-20 h-1 bg-patriotBlue mx-auto"></div>
             </div>
             
@@ -488,7 +588,7 @@
                                 <a href="tel:7326342288" class="inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 text-xl">
                                     <i class="fas fa-phone mr-2"></i> (732) 634-2288
                                 </a>
-                                <p class="mt-6 text-gray-600">Walk-ins welcome, but appointments are recommended to avoid wait times.</p>
+                                <p class="mt-6 text-gray-600">Walk-ins welcome, calling is recommended to know about wait times.</p>
                             </div>
                         </div>
                     </div>
@@ -513,16 +613,18 @@
     <!-- Footer -->
     <footer class="bg-patriotBlue text-creamWhite py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8 flex-wrap">
+                <!-- Logo & Description -->
+                <div class="flex-1">
                     <div class="flex items-center mb-4">
                         <i class="fas fa-scissors text-2xl text-creamWhite mr-2"></i>
                         <span class="text-2xl font-bold text-creamWhite">Master<span class="text-creamWhite">Clips</span></span>
                     </div>
                     <p class="text-gray-300">Precision cuts with American style in Avenel, NJ.</p>
                 </div>
-                
-                <div>
+    
+                <!-- Quick Links -->
+                <div class="flex-1">
                     <h3 class="text-xl font-bold mb-4">QUICK LINKS</h3>
                     <ul class="space-y-2">
                         <li><a href="#home" class="text-gray-300 hover:text-creamWhite transition">Home</a></li>
@@ -532,8 +634,9 @@
                         <li><a href="#contact" class="text-gray-300 hover:text-creamWhite transition">Contact</a></li>
                     </ul>
                 </div>
-                
-                <div>
+    
+                <!-- Contact Info -->
+                <div class="flex-1">
                     <h3 class="text-xl font-bold mb-4">CONTACT</h3>
                     <ul class="space-y-2 text-gray-300">
                         <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2 text-creamWhite"></i> 1146 St Georges Ave, Avenel, NJ 07001</li>
@@ -541,37 +644,24 @@
                         <li class="flex items-center"><i class="fas fa-envelope mr-2 text-creamWhite"></i> masterclipsnj@gmail.com</li>
                     </ul>
                 </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-4">FOLLOW US</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-creamWhite rounded-full flex items-center justify-center hover:bg-patriotRed transition">
-                            <i class="fab fa-facebook-f text-patriotBlue"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-creamWhite rounded-full flex items-center justify-center hover:bg-patriotRed transition">
-                            <i class="fab fa-instagram text-patriotBlue"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-creamWhite rounded-full flex items-center justify-center hover:bg-patriotRed transition">
-                            <i class="fab fa-twitter text-patriotBlue"></i>
-                        </a>
-                    </div>
-                    <div class="mt-6">
-                        <h4 class="font-bold mb-2">NEWSLETTER</h4>
-                        <div class="flex">
-                            <input type="email" placeholder="Your email" class="px-4 py-2 bg-creamWhite text-gray-800 rounded-l-lg focus:outline-none w-full">
-                            <button class="bg-patriotRed hover:bg-red-800 text-creamWhite px-4 rounded-r-lg">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </div>
-                    </div>
+    
+                <!-- Call Us Today -->
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold mb-4">CALL US TODAY</h3>
+                    <p class="mb-4 text-gray-300">Got questions or need an appointment? Give us a call anytime during business hours.</p>
+                    <a href="tel:7326342288" class="inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-2 px-4 rounded transition">
+                        <i class="fas fa-phone mr-2"></i> (732) 634-2288
+                    </a>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+    
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
                 <p>&copy; 2023 Master Clips Barber Shop. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="fixed bottom-8 right-8 bg-patriotRed text-creamWhite w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
@@ -641,5 +731,30 @@
             fadeObserver.observe(element);
         });
     </script>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        }
+    });
+</script>
+
+
 </body>
 </html>
