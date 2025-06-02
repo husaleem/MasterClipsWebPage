@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – Master Clips Barber Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            patriotRed: '#870000',
+            patriotBlue: '#01365f',
+            creamWhite: '#FBF3EF',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .barber-card:hover img {
+      transform: scale(1.05);
+    }
+    .barber-card img {
+      transition: transform 0.3s ease;
+    }
+
+    /* ✅ Add this new class inside the existing <style> tag */
+    .bg-barber-stripes {
+      background-image: repeating-linear-gradient(
+        45deg,
+        #c93030,        /* Red */
+        #c93030 20px,
+        #FBF3EF 20px,    /* White */
+        #FBF3EF 40px,
+        #3470a9 40px,    /* Blue */
+        #3470a9 90px,
+        #FBF3EF 90px,
+        #FBF3EF 100px     /* White again */
+      );
+      background-size: 100px 100px;
+    }
+  </style>
+</head>
+<body class="bg-creamWhite font-sans text-gray-800">
+
+    <nav class="fixed w-full bg-patriotBlue text-creamWhite z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-scissors text-2xl text-creamWhite mr-2"></i>
+                <a href="index.html#home" ><span class="text-2xl font-bold">Master<span class="text-creamWhite">Clips Avenel</span></span> </a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html#home" class="hover:text-creamWhite transition">Home</a>
+                <a href="index.html#services" class="hover:text-creamWhite transition">Services</a>
+                <a href="index.html#barbers" class="hover:text-creamWhite transition">Our Barbers</a>
+                <a href="index.html#gallery" class="hover:text-creamWhite transition">Gallery</a>
+                <a href="index.html#contact" class="hover:text-creamWhite transition">Contact</a>
+                <a href="tel:7326342288" class="ml-6 bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-2 px-4 rounded transition flex items-center">
+                    <i class="fas fa-phone mr-2"></i> Call Us
+                </a>
+            </div>
+            
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-2xl text-creamWhite"></i>
+            </button>
+        </div>
+        
+        <div class="h-1 bg-barber-stripes"></div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-patriotBlue w-full py-4 px-6" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html#home" class="hover:text-creamWhite transition">Home</a>
+                <a href="index.html#services" class="hover:text-creamWhite transition">Services</a>
+                <a href="index.html#barbers" class="hover:text-creamWhite transition">Our Barbers</a>
+                <a href="index.html#gallery" class="hover:text-creamWhite transition">Gallery</a>
+                <a href="index.html#contact" class="hover:text-creamWhite transition">Contact</a>
+                <a href="tel:7326342288" class="block w-full mt-6 bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-3 px-4 rounded text-center text-lg transition">
+                    <i class="fas fa-phone mr-2"></i> CALL US NOW
+                  </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+  <!-- Hero Banner -->
+  <section class="bg-patriotBlue text-creamWhite py-28 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Gallery of Cuts</h1>
+    <p class="text-lg">Craftsmanship in every detail – check out our work.</p>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Gallery Item -->
+        <div class="bg-white rounded shadow-lg overflow-hidden transform hover:scale-105 transition">
+          <img src="images/fade1.jpg" alt="Low Skin Fade" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-patriotRed">Low Skin Fade</h3>
+            <p class="text-sm text-gray-600">Clean and precise, perfect for a fresh look.</p>
+          </div>
+        </div>
+        <!-- Duplicate this div for more gallery items -->
+        <!-- Example -->
+        <div class="bg-white rounded shadow-lg overflow-hidden transform hover:scale-105 transition">
+          <img src="images/design1.jpg" alt="Hair Design" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-patriotRed">Hair Design</h3>
+            <p class="text-sm text-gray-600">Sharp lines with artistic flair.</p>
+          </div>
+        </div>
+        <!-- Add more items here -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-patriotBlue text-creamWhite py-12">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-8 flex-wrap">
+            <!-- Logo & Description -->
+            <div class="flex-1">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-scissors text-2xl text-creamWhite mr-2"></i>
+                    <span class="text-2xl font-bold text-creamWhite">Master<span class="text-creamWhite">Clips</span></span>
+                </div>
+                <p class="text-gray-300">Precision cuts with fashionable style in Avenel, NJ.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="flex-1">
+                <h3 class="text-xl font-bold mb-4">QUICK LINKS</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html#home" class="text-gray-300 hover:text-creamWhite transition">Home</a></li>
+                    <li><a href="index.html#services" class="text-gray-300 hover:text-creamWhite transition">Services</a></li>
+                    <li><a href="index.html#barbers" class="text-gray-300 hover:text-creamWhite transition">Our Barbers</a></li>
+                    <li><a href="index.html#gallery" class="text-gray-300 hover:text-creamWhite transition">Gallery</a></li>
+                    <li><a href="index.html#contact" class="text-gray-300 hover:text-creamWhite transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="flex-1">
+                <h3 class="text-xl font-bold mb-4">CONTACT</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2 text-creamWhite"></i> 1146 St Georges Ave, Avenel, NJ 07001</li>
+                    <li class="flex items-center"><i class="fas fa-phone mr-2 text-creamWhite"></i> (732) 634-2288</li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-2 text-creamWhite"></i> masterclipsnj@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Call Us Today -->
+            <div class="flex-1">
+                <h3 class="text-xl font-bold mb-4">CALL US TODAY</h3>
+                <p class="mb-4 text-gray-300">Got questions or need an appointment? Give us a call anytime during business hours.</p>
+                <a href="tel:7326342288" class="inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-2 px-4 rounded transition">
+                    <i class="fas fa-phone mr-2"></i> (732) 634-2288
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+            <p>&copy; 2025 Master Clips Barber Shop. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  
+
+</body>
+</html>

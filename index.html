@@ -147,23 +147,33 @@
                 <a href="#barbers" class="hover:text-creamWhite transition">Our Barbers</a>
                 <a href="#gallery" class="hover:text-creamWhite transition">Gallery</a>
                 <a href="#contact" class="hover:text-creamWhite transition">Contact</a>
-                <a href="tel:7326342288" class="hidden md:inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-2 px-4 rounded transition">
-                    <i class="fas fa-phone mr-2"></i> Call Us
-                </a>
+                <a href="tel:7326342288" class="block w-full mt-6 bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-3 px-4 rounded text-center text-lg transition">
+                    <i class="fas fa-phone mr-2"></i> CALL US NOW
+                  </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-image flex items-center justify-center text-creamWhite pt-20" id="home">
-        <div class="container mx-auto px-6 text-center fade-in">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">MASTER CLIPS. <span class="text-patriotRed">MASTERFUL STYLE.</span></h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Experience the art of barbering with our skilled professionals in Avenel, NJ.</p>
-            <a href="tel:7326342288" class="inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
-                <i class="fas fa-phone mr-2"></i> CALL US NOW
-            </a>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section 
+  class="relative h-screen bg-cover bg-center bg-no-repeat text-creamWhite flex items-center justify-center" 
+  id="home"
+  style="background-image: url('images/store.JPEG');"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-6 text-center fade-in relative z-10">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">MASTER CLIPS. <span class="text-creamWhite">MASTERFUL STYLE.</span></h1>
+    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Experience the art of barbering with our skilled professionals in Avenel, NJ.</p>
+    <a href="tel:7326342288" class="inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+      <i class="fas fa-phone mr-2"></i> CALL US NOW
+    </a>
+  </div>
+</section>
+
+
 
     <!-- Services Section -->
 <!-- Services Section -->
@@ -439,7 +449,11 @@
                     <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3" alt="Gallery" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
                 </div>
             </div>
-        </div>
+            <div class="flex justify-center mt-12">
+                <a href="gallery.html" class="inline-block bg-patriotRed hover:bg-red-800 text-creamWhite font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                  View Full Gallery
+                </a>
+              </div>
     </section>
 
     <!-- Contact Section -->
